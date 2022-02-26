@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.leaflet-container {
+    height: 850px;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 20px;
+    background: black;
+    color: rgba(235, 235, 235, 0.733);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn:active {
+    background-color: white;
+    color: black;
+}
