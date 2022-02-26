@@ -5,7 +5,7 @@ body {
 }
 
 .leaflet-container {
-    height: 850px;
+    height: 90%;
     width: 100%;
 }
 
@@ -22,8 +22,8 @@ body {
     background-color: white;
     color: black;
 }
-@media (max-width:500px) {
+/* @media (max-width:500px) {
     .leaflet-container{
         height:90%;
     }    
-}
+} */
