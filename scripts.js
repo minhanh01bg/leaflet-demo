@@ -66,9 +66,9 @@ function gps() {
     }
     else {
         navigator.geolocation.getCurrentPosition(getPosition);
-    }
+    }   
     function getPosition(position){
-        console.log(position);
+        // console.log(position);
         markerpeek = L.marker([position.coords.latitude, position.coords.longitude])
                         .addTo(map)
                         .openPopup();
