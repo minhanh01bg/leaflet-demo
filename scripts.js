@@ -69,8 +69,14 @@ function gps() {
     }   
     function getPosition(position){
         // console.log(position);
-        markerpeek = L.marker([position.coords.latitude, position.coords.longitude])
+        if (!markerpeek) {
+            markerpeek = L.marker([position.coords.latitude, position.coords.longitude])
                         .addTo(map)
                         .openPopup();
+        } else {
+            markerpeek.setLatLng([position.coords.latitude, position.coords.longitude])
+                        .addTo(map)
+                        .openPopup();
+        }
     }
 }
